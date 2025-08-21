@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Model files and large data
+*.h5
+*.pkl
+*.model
+*.bin
+*.hdf5
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local
+
+# Rails
+*.rbc
+capybara-*.html
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+.byebug_history
+/config/master.key
+/config/credentials.yml.enc

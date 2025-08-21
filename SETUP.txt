@@ -1,0 +1,73 @@
+
+# Sentiment Analysis Project Setup
+
+This project contains:
+- A Python API (FastAPI + FinBERT)
+- A Ruby frontend app
+
+## Prerequisites
+
+- Python 3.8+ installed
+- Ruby 2.7+ installed
+- pip (Python package manager)
+- Bundler (Ruby gem manager)
+
+## Python API Setup
+
+1. Open a terminal and navigate to the API directory:
+  cd sentiment-analysis/python-ml-api
+
+2. Create and activate a virtual environment:
+  python3 -m venv venv
+  source venv/bin/activate
+
+3. Install dependencies:
+  pip install -r requirements.txt
+
+4. (Optional) To run the API manually:
+  uvicorn main:app --host 0.0.0.0 --port 5000 --reload
+
+## Ruby Frontend Setup
+
+1. Navigate to the Ruby app directory:
+  cd ../rails-sentiment-app
+
+2. Install dependencies:
+  bundle install
+
+3. (Optional) To run the Ruby app manually:
+  ruby final.rb
+
+## Running Both Servers with Shell Script
+
+From the project root, run:
+  bash run.sh
+
+This will:
+- Activate the Python virtual environment
+- Start the Python API on port 5000
+- Start the Ruby frontend on port 3000
+
+## Project Structure
+
+- python-ml-api/: FastAPI backend for sentiment analysis
+- rails-sentiment-app/: Ruby frontend app
+- run.sh: Script to start both servers
+- requirements.txt: Python dependencies
+- Gemfile: Ruby dependencies
+
+## API Usage
+
+POST /sentiment with JSON:
+{
+  "text": "Your text here"
+}
+Response:
+{
+  "sentiment": "LABEL",
+  "score": 0.99
+}
+
+---
+
+For any issues, check the README files in each subfolder.
